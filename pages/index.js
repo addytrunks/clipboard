@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div>
+    <div className='ml-10'>
       <Head>
         <title>ClipBoard</title>
       </Head>
@@ -12,7 +12,7 @@ export default function Home() {
         
         {/* Hero */}
         <section>
-          <div className='section-container mb-40 px-10 pt-16'>
+          <div className='section-container mb-40  pt-16'>
             <img src="images/logo.svg" className="mx-auto my-16" />
             
             <h3>
@@ -38,7 +38,7 @@ export default function Home() {
       
         {/* Snippets */}
         <section>
-          <div className='section-container my-15 px-10'>
+          <div className='section-container my-15 '>
 
             <h3>
               Keep track of your snippets
@@ -52,6 +52,55 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Feautures */}
+        <section>
+          <div className='section-container my-20 '>
+            <div className="relative flex flex-col md:flex-row md:space-x-32">
+
+              <div className='md:w-1/2'>
+                <img src="/images/image-computer.png" className='md:absolute top-0 right-[50%]'/>
+              </div>
+
+              <div className='flex flex-col mt-16 mb-24 space-y-12 text-xl md:mb-60 md:text-left md:pl-16 md:w-1/2'>
+                <div>
+                  <h5 className='mb-2 text-darkGrayishBlue text-2xl font-bold'>Quick Search</h5>
+                  <p class="max-w-md mx-auto text-grayishBlue">
+                    Easily search your snippets by content, category, web address,
+                    application, and more.
+                  </p>
+                </div>
+
+                <div>
+                  <h5 className='mb-2 text-darkGrayishBlue text-2xl font-bold'>iCloud Sync</h5>
+                  <p class="max-w-md mx-auto text-grayishBlue">
+                    Instantly saves and syncs snippets across all your devices.
+                  </p>
+                </div>
+                
+                <div>
+                  <h5 className='mb-2 text-darkGrayishBlue text-2xl font-bold'>Completely History</h5>
+                  <p class="max-w-md mx-auto text-grayishBlue">
+                    Retrieve any snippets from the first moment you started using
+                    the app.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* Access Anywhere */}
+        <section>
+          <div className='section-container my-20'>
+            <h3>Access Clipboard anywhere</h3>
+            <p className="max-w-3xl mx-auto mb-24 text-xl leading-9 text-center text-grayishBlue">
+            Whether you’re on the go, or at your computer, you can access all your
+            Clipboard snippets in a few simple clicks.
+            </p>
+            <img src="/images/image-devices.png" className='mx-auto' />
+          </div>
+        </section>
       </div>
     </div>
   )
